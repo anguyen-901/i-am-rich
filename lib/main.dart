@@ -6,12 +6,13 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.green,
         appBar: AppBar(
-          title: const Text("I Am Rich"),
+          title: const Center(child: Text("I Am Rich")),
           backgroundColor: Colors.green[900],
         ),
-        body: const Image(
-          image: NetworkImage(
-              "https://drive.google.com/uc?export=view&id=1wIk6JJINM7p0PqtMuy9wvkRQtDg_uukm"),
+        body: const Center(
+          child: Image(
+            image: AssetImage("images/diamond.png"),
+          ),
         ),
       ),
     ),
